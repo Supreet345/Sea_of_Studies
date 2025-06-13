@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sea of Studies</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 2px solid #ddd;
+            background-color: #007bff;
+            color: white;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        .logo {
+            font-size: 2.2em;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-list li a:hover {
+            color: #ffe600;
+        }
+
+        main {
+            padding: 60px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        main h1 {
+            font-size: 3.8em;
+            color: #333;
+            font-weight: bold;
+            width: 70%;
+            line-height: 1.3;
+        }
+
+        .students-image {
+            width: 25%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .students-image:hover {
+            transform: scale(1.05);
+        }
+
+        .subjects-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 30px;
+            margin: 40px 0;
+            padding-left: 40px;
+            width: 100%;
+        }
+
+        .subject-card {
+            background: linear-gradient(145deg, #e0e0e0, #ffffff);
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 15px;
+            width: 75%;
+            height: 180px;
+            position: relative;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .subject-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .subject-card h2 {
+            font-size: 1.8em;
+            color: #444;
+            margin: 0;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-weight: 600;
+        }
+
+        .subject-card img {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            height: 140px;
+            width: auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-size: 1em;
+            box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Sea of Studies</div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Subjects</a></li>
+                <li><a href="#">Books</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>"The difference between ordinary and extraordinary is that little extra."</h1>
+        <img src="students.png" alt="Students Image" class="students-image">
+    </main>
+    <div class="subjects-container">
+        <div class="subject-card">
+            <h2>Maths Selina Grade 9</h2>
+            <img src="download (3).png" alt="Maths Image">
+        </div>
+        <div class="subject-card">
+            <h2>Physics Selina Grade 9</h2>
+            <img src="download (4).png" alt="Physics Image">
+        </div>
+        <div class="subject-card">
+            <h2>Chemistry Selina Grade 9</h2>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Sea of Studies. All rights reserved.
+    </footer>
+</body>
+</html>
